@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.wheeler.game.ui.root.FragmentRoot"
+        android:label="FragmentMain" >
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentEgyptWheel"
+            app:destination="@id/fragmentEgyptWheel" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentEgyptWheel"
+        android:name="com.wheeler.game.ui.egypt_wheel.FragmentEgyptWheel"
+        android:label="FragmentEgyptWheel" >
+        <action
+            android:id="@+id/action_fragmentEgyptWheel_to_dialogChance"
+            app:destination="@id/dialogChance" />
+    </fragment>
+    <dialog
+        android:id="@+id/dialogChance"
+        android:name="com.wheeler.game.ui.dialogs.DialogChance"
+        android:label="DialogChance" />
+</navigation>

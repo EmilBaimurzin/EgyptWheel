@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EgyptWheel</string>
+    <string name="pause">Pause</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="want_to_play_a_super_game">want to play a super game?</string>
+    <string name="guess_the_color">guess the color!</string>
+</resources>
